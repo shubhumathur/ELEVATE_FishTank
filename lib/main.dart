@@ -81,11 +81,16 @@ class _MyAppState extends State<MyApp> {
         "ELEVATE",
         style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
       ),
+      SizedBox(height: 13),
+      Text(
+        "Connecting Causes",
+        style: TextStyle(fontSize: 23, fontWeight: FontWeight.bold),
+      ),
       SizedBox(height: 13), // Adjust the height as needed
       Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: const Text(
-          "Figma ipsum component variant main layer. Connection style invite select fill. Move pencil bold community invite effect.",
+          "Creating a united world fostering empathy and compassion",
           textAlign: TextAlign.center,
           style: TextStyle(color: Colors.black, fontSize: 15),
         ),
@@ -168,11 +173,17 @@ class _SixthScreenState extends State<SixthScreen> {
         "ELEVATE",
         style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
       ),*/
-      SizedBox(height: 13), // Adjust the height as needed
+      SizedBox(height: 13),
+      Text(
+        "Connecting Causes",
+        style: TextStyle(fontSize: 23, fontWeight: FontWeight.bold),
+      ),
+       SizedBox(height: 13),
+       // Adjust the height as needed
       Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: const Text(
-          "Figma ipsum component variant main layer. Connection style invite select fill. Move pencil bold community invite effect.",
+          "Creating a united world fostering empathy and compassion",
           textAlign: TextAlign.center,
           style: TextStyle(color: Colors.black, fontSize: 15),
         ),
@@ -180,7 +191,7 @@ class _SixthScreenState extends State<SixthScreen> {
       SizedBox(height: 20),
       Text(
         "Choose Your Domain",
-        style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
       ),
               SizedBox(height: 20),
               ElevatedButton(
@@ -193,7 +204,7 @@ class _SixthScreenState extends State<SixthScreen> {
   child: Padding(
     padding: EdgeInsets.symmetric(horizontal: 25.0, vertical: 25.0),
     child: Text(
-      "  VOLUNTEER  ",
+      "   VOLUNTEER   ",
       style: TextStyle(fontSize: 18),
     ),
   ),
@@ -275,11 +286,17 @@ class _SeventhScreenState extends State<SeventhScreen> {
         "ELEVATE",
         style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
       ),*/
-      SizedBox(height: 13), // Adjust the height as needed
+      SizedBox(height: 13),
+      Text(
+        "Connecting Causes",
+        style: TextStyle(fontSize: 23, fontWeight: FontWeight.bold),
+      ),
+      SizedBox(height: 13), 
+      // Adjust the height as needed
       Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: const Text(
-          "Figma ipsum component variant main layer. Connection style invite select fill. Move pencil bold community invite effect.",
+          "Creating a united world fostering empathy and compassion",
           textAlign: TextAlign.center,
           style: TextStyle(color: Colors.black, fontSize: 15),
         ),
@@ -287,7 +304,7 @@ class _SeventhScreenState extends State<SeventhScreen> {
       SizedBox(height: 20),
       Text(
         "Let's Get Going!",
-        style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
       ),
               SizedBox(height: 20),
               ElevatedButton(
@@ -316,11 +333,17 @@ ElevatedButton(
   child: Padding(
     padding: EdgeInsets.symmetric(horizontal: 25.0, vertical: 25.0),
     child: Text(
-      "Sign Up",
+      "       Sign Up      ",
       style: TextStyle(fontSize: 18),
     ),
   ),
 ),
+SizedBox(height: 13), // Adjust the height as needed
+      
+      Text(
+        "Already Have An Account? LOGIN",
+        style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
+      ),
             ],
           ),
         ),
@@ -384,10 +407,16 @@ class _EigthScreenState extends State<EigthScreen> {
         style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
       ),*/
       SizedBox(height: 13), // Adjust the height as needed
+      
+      Text(
+        "Connecting Causes",
+        style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
+      ),
+      SizedBox(height: 13), // Adjust the height as needed
       Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: const Text(
-          "Figma ipsum component variant main layer. Connection style invite select fill. Move pencil bold community invite effect.",
+          "Creating a united world fostering empathy and compassion",
           textAlign: TextAlign.center,
           style: TextStyle(color: Colors.black, fontSize: 15),
         ),
@@ -395,7 +424,7 @@ class _EigthScreenState extends State<EigthScreen> {
       SizedBox(height: 20),
       Text(
         "Let's Get Going!",
-        style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
       ),
               SizedBox(height: 20),
               ElevatedButton(
@@ -424,11 +453,19 @@ ElevatedButton(
   child: Padding(
     padding: EdgeInsets.symmetric(horizontal: 25.0, vertical: 25.0),
     child: Text(
-      "Sign Up",
+      "          Sign Up         ",
       style: TextStyle(fontSize: 18),
     ),
+    
+
   ),
 ),
+SizedBox(height: 13), // Adjust the height as needed
+      
+      Text(
+        "Already Have An Account? LOGIN",
+        style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
+      ), 
             ],
           ),
         ),
