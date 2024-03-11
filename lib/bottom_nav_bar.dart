@@ -16,6 +16,7 @@ class BottomNavBar extends StatelessWidget {
         BottomNavigationBarItem(
           icon: SvgPicture.asset('assests/connect.svg'),
           label: 'Connect',
+          
         ),
         BottomNavigationBarItem(
           icon: SvgPicture.asset('assests/contribute.svg'),

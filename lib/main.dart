@@ -1,6 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/cancel_your_event.dart';
+import 'package:flutter_application_1/know_more_past_event.dart';
+import 'package:flutter_application_1/ongoing_your_event.dart';
+//import 'package:flutter_application_1/past_event_Mycard.dart';
+
+import 'package:flutter_application_1/your_events_MyCard.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'bottom_nav_bar.dart';
+import 'top_nav_bar.dart';
+import 'Upcoming_MyCard.dart';
+
+
 void main() {
   runApp(
     MaterialApp(
@@ -9,6 +19,11 @@ void main() {
        '/': (context) => MyApp(),
        '/second': (context) => SecondScreen(),
        '/third': (context) => ThirdScreen(),
+       '/fourth':(context) => FourthScreen(),
+       '/fifth':(context) => FifthScreen(),
+       '/sixth':(context) => SixthScreen(),
+       '/seventh':(context) => SeventhScreen(),
+        '/eigth':(context) => EigthScreen(),
           },
     ),
     
@@ -33,7 +48,7 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
-          leading: Row(
+          /*leading: Row(
             children: [
               Padding(
                 padding: const EdgeInsets.all(8.0),
@@ -54,26 +69,31 @@ class _MyAppState extends State<MyApp> {
               padding: const EdgeInsets.all(8.0),
               child: SvgPicture.asset("assests/battery-three-quarters.svg", width: 20, height: 20),
             ),
-          ],
+          ],*/
         ),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SvgPicture.asset("assests/undraw_showing_support_re_5f2v 1.svg", width: 200, height: 120, fit: BoxFit.scaleDown),
-              SizedBox(height: 20),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                child: const Text(
-                  "Figma ipsum component variant main layer. Connection style invite select fill. Move pencil bold community invite effect.",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(color: Colors.black, fontSize: 15),
-                ),
-              ),
+      SizedBox(height: 20), // Adjust the height as needed
+      Text(
+        "ELEVATE",
+        style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
+      ),
+      SizedBox(height: 13), // Adjust the height as needed
+      Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20.0),
+        child: const Text(
+          "Figma ipsum component variant main layer. Connection style invite select fill. Move pencil bold community invite effect.",
+          textAlign: TextAlign.center,
+          style: TextStyle(color: Colors.black, fontSize: 15),
+        ),
+      ),
               SizedBox(height: 20),
               ElevatedButton(
  onPressed: () {
-    Navigator.pushNamed(context, '/second');
+    Navigator.pushNamed(context, '/sixth');
   },
   style: ButtonStyle(
     backgroundColor: MaterialStateProperty.all<Color>(Color(0xff0E6BA8)),
@@ -94,6 +114,446 @@ class _MyAppState extends State<MyApp> {
   }
 }
 
+
+
+
+class SixthScreen extends StatefulWidget {
+  const SixthScreen({Key? key}) : super(key: key);
+
+  @override
+  _SixthScreenState createState() => _SixthScreenState();
+}
+
+class _SixthScreenState extends State<SixthScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        backgroundColor: Color(0xffA6E1FA),
+        appBar: AppBar(
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+          /*leading: Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: SvgPicture.asset("assests/4_30.svg", width: 16, height: 12),
+              ),
+            ],
+          ),
+          actions: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SvgPicture.asset("assests/signal.svg", width: 20, height: 20),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SvgPicture.asset("assests/wifi.svg", width: 20, height: 20),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SvgPicture.asset("assests/battery-three-quarters.svg", width: 20, height: 20),
+            ),
+          ],*/
+        ),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SvgPicture.asset("assests/undraw_showing_support_re_5f2v 1.svg", width: 200, height: 120, fit: BoxFit.scaleDown),
+      SizedBox(height: 20), // Adjust the height as needed
+      /*Text(
+        "ELEVATE",
+        style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
+      ),*/
+      SizedBox(height: 13), // Adjust the height as needed
+      Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20.0),
+        child: const Text(
+          "Figma ipsum component variant main layer. Connection style invite select fill. Move pencil bold community invite effect.",
+          textAlign: TextAlign.center,
+          style: TextStyle(color: Colors.black, fontSize: 15),
+        ),
+      ),
+      SizedBox(height: 20),
+      Text(
+        "Choose Your Domain",
+        style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+      ),
+              SizedBox(height: 20),
+              ElevatedButton(
+ onPressed: () {
+    Navigator.pushNamed(context, '/seventh');
+  },
+  style: ButtonStyle(
+    backgroundColor: MaterialStateProperty.all<Color>(Color(0xff0E6BA8)),
+  ),
+  child: Padding(
+    padding: EdgeInsets.symmetric(horizontal: 25.0, vertical: 25.0),
+    child: Text(
+      "  VOLUNTEER  ",
+      style: TextStyle(fontSize: 18),
+    ),
+  ),
+),
+SizedBox(height: 15),
+ElevatedButton(
+ onPressed: () {
+    Navigator.pushNamed(context, '/eigth');
+  },
+  style: ButtonStyle(
+    backgroundColor: MaterialStateProperty.all<Color>(Color(0xff0E6BA8)),
+  ),
+  child: Padding(
+    padding: EdgeInsets.symmetric(horizontal: 25.0, vertical: 25.0),
+    child: Text(
+      "ORGANISATION",
+      style: TextStyle(fontSize: 18),
+    ),
+  ),
+),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+
+
+class SeventhScreen extends StatefulWidget {
+  const SeventhScreen({Key? key}) : super(key: key);
+
+  @override
+  _SeventhScreenState createState() => _SeventhScreenState();
+}
+
+class _SeventhScreenState extends State<SeventhScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        backgroundColor: Color(0xffA6E1FA),
+        appBar: AppBar(
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+          /*leading: Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: SvgPicture.asset("assests/4_30.svg", width: 16, height: 12),
+              ),
+            ],
+          ),
+          actions: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SvgPicture.asset("assests/signal.svg", width: 20, height: 20),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SvgPicture.asset("assests/wifi.svg", width: 20, height: 20),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SvgPicture.asset("assests/battery-three-quarters.svg", width: 20, height: 20),
+            ),
+          ],*/
+        ),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SvgPicture.asset("assests/undraw_showing_support_re_5f2v 1.svg", width: 200, height: 120, fit: BoxFit.scaleDown),
+      SizedBox(height: 20), // Adjust the height as needed
+      /*Text(
+        "ELEVATE",
+        style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
+      ),*/
+      SizedBox(height: 13), // Adjust the height as needed
+      Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20.0),
+        child: const Text(
+          "Figma ipsum component variant main layer. Connection style invite select fill. Move pencil bold community invite effect.",
+          textAlign: TextAlign.center,
+          style: TextStyle(color: Colors.black, fontSize: 15),
+        ),
+      ),
+      SizedBox(height: 20),
+      Text(
+        "Let's Get Going!",
+        style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+      ),
+              SizedBox(height: 20),
+              ElevatedButton(
+ onPressed: () {
+    Navigator.pushNamed(context, '/second');
+  },
+  style: ButtonStyle(
+    backgroundColor: MaterialStateProperty.all<Color>(Color(0xff0E6BA8)),
+  ),
+  child: Padding(
+    padding: EdgeInsets.symmetric(horizontal: 25.0, vertical: 25.0),
+    child: Text(
+      "  VOLUNTEER  ",
+      style: TextStyle(fontSize: 18),
+    ),
+  ),
+),
+SizedBox(height: 15),
+ElevatedButton(
+ onPressed: () {
+    Navigator.pushNamed(context, '/second');
+  },
+  style: ButtonStyle(
+    backgroundColor: MaterialStateProperty.all<Color>(Color(0xff0E6BA8)),
+  ),
+  child: Padding(
+    padding: EdgeInsets.symmetric(horizontal: 25.0, vertical: 25.0),
+    child: Text(
+      "Sign Up",
+      style: TextStyle(fontSize: 18),
+    ),
+  ),
+),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+}
+
+
+
+class EigthScreen extends StatefulWidget {
+  const EigthScreen({Key? key}) : super(key: key);
+
+  @override
+  _EigthScreenState createState() => _EigthScreenState();
+}
+
+class _EigthScreenState extends State<EigthScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        backgroundColor: Color(0xffA6E1FA),
+        appBar: AppBar(
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+          /*leading: Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: SvgPicture.asset("assests/4_30.svg", width: 16, height: 12),
+              ),
+            ],
+          ),
+          actions: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SvgPicture.asset("assests/signal.svg", width: 20, height: 20),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SvgPicture.asset("assests/wifi.svg", width: 20, height: 20),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SvgPicture.asset("assests/battery-three-quarters.svg", width: 20, height: 20),
+            ),
+          ],*/
+        ),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SvgPicture.asset("assests/undraw_showing_support_re_5f2v 1.svg", width: 200, height: 120, fit: BoxFit.scaleDown),
+      SizedBox(height: 20), // Adjust the height as needed
+      /*Text(
+        "ELEVATE",
+        style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
+      ),*/
+      SizedBox(height: 13), // Adjust the height as needed
+      Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20.0),
+        child: const Text(
+          "Figma ipsum component variant main layer. Connection style invite select fill. Move pencil bold community invite effect.",
+          textAlign: TextAlign.center,
+          style: TextStyle(color: Colors.black, fontSize: 15),
+        ),
+      ),
+      SizedBox(height: 20),
+      Text(
+        "Let's Get Going!",
+        style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+      ),
+              SizedBox(height: 20),
+              ElevatedButton(
+ onPressed: () {
+    Navigator.pushNamed(context, '/second');
+  },
+  style: ButtonStyle(
+    backgroundColor: MaterialStateProperty.all<Color>(Color(0xff0E6BA8)),
+  ),
+  child: Padding(
+    padding: EdgeInsets.symmetric(horizontal: 25.0, vertical: 25.0),
+    child: Text(
+      "  ORGANISATION  ",
+      style: TextStyle(fontSize: 18),
+    ),
+  ),
+),
+SizedBox(height: 15),
+ElevatedButton(
+ onPressed: () {
+    Navigator.pushNamed(context, '/second');
+  },
+  style: ButtonStyle(
+    backgroundColor: MaterialStateProperty.all<Color>(Color(0xff0E6BA8)),
+  ),
+  child: Padding(
+    padding: EdgeInsets.symmetric(horizontal: 25.0, vertical: 25.0),
+    child: Text(
+      "Sign Up",
+      style: TextStyle(fontSize: 18),
+    ),
+  ),
+),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+}
+
+
+class NinthScreen extends StatefulWidget {
+  const NinthScreen({Key? key}) : super(key: key);
+
+  @override
+  _NinthScreenState createState() => _NinthScreenState();
+}
+
+class _NinthScreenState extends State<NinthScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        backgroundColor: Color(0xffA6E1FA),
+        appBar: AppBar(
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+          /*leading: Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: SvgPicture.asset("assests/4_30.svg", width: 16, height: 12),
+              ),
+            ],
+          ),
+          actions: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SvgPicture.asset("assests/signal.svg", width: 20, height: 20),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SvgPicture.asset("assests/wifi.svg", width: 20, height: 20),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SvgPicture.asset("assests/battery-three-quarters.svg", width: 20, height: 20),
+            ),
+          ],*/
+        ),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SvgPicture.asset("assests/undraw_showing_support_re_5f2v 1.svg", width: 200, height: 120, fit: BoxFit.scaleDown),
+      SizedBox(height: 20), // Adjust the height as needed
+      /*Text(
+        "ELEVATE",
+        style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
+      ),*/
+      SizedBox(height: 13), // Adjust the height as needed
+      Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20.0),
+        child: const Text(
+          "Figma ipsum component variant main layer. Connection style invite select fill. Move pencil bold community invite effect.",
+          textAlign: TextAlign.center,
+          style: TextStyle(color: Colors.black, fontSize: 15),
+        ),
+      ),
+      SizedBox(height: 20),
+      Text(
+        "Let's Get Going!",
+        style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+      ),
+              SizedBox(height: 20),
+              ElevatedButton(
+ onPressed: () {
+    Navigator.pushNamed(context, '/second');
+  },
+  style: ButtonStyle(
+    backgroundColor: MaterialStateProperty.all<Color>(Color(0xff0E6BA8)),
+  ),
+  child: Padding(
+    padding: EdgeInsets.symmetric(horizontal: 25.0, vertical: 25.0),
+    child: Text(
+      "  ORGANISATION  ",
+      style: TextStyle(fontSize: 18),
+    ),
+  ),
+),
+SizedBox(height: 15),
+ElevatedButton(
+ onPressed: () {
+    Navigator.pushNamed(context, '/second');
+  },
+  style: ButtonStyle(
+    backgroundColor: MaterialStateProperty.all<Color>(Color(0xff0E6BA8)),
+  ),
+  child: Padding(
+    padding: EdgeInsets.symmetric(horizontal: 25.0, vertical: 25.0),
+    child: Text(
+      "Sign Up",
+      style: TextStyle(fontSize: 18),
+    ),
+  ),
+),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
 class SecondScreen extends StatefulWidget {
   const SecondScreen({Key? key}) : super(key: key);
 
@@ -110,7 +570,7 @@ class _SecondScreenState extends State<SecondScreen> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: Row(
+        /*leading: Row(
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
@@ -131,7 +591,7 @@ class _SecondScreenState extends State<SecondScreen> {
             padding: const EdgeInsets.all(8.0),
             child: SvgPicture.asset("assests/battery-three-quarters.svg", width: 20, height: 20),
           ),
-        ],
+        ],*/
       ),
       body: Center(
         child: Column(
@@ -427,6 +887,8 @@ class _ThirdScreenState extends State<ThirdScreen> {
 
 
 
+
+
 class ThirdScreen extends StatefulWidget {
   const ThirdScreen({Key? key}) : super(key: key);
 
@@ -451,7 +913,7 @@ class _ThirdScreenState extends State<ThirdScreen> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: Row(
+        /*leading: Row(
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
@@ -472,15 +934,254 @@ class _ThirdScreenState extends State<ThirdScreen> {
             padding: const EdgeInsets.all(8.0),
             child: SvgPicture.asset("assests/battery-three-quarters.svg", width: 20, height: 20),
           ),
+        ],*/
+      ),
+      body: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              
+              TopNavBar(), // Top navigation bar comes below the four elements
+            ],
+          ),
+          Expanded(
+            child:SingleChildScrollView(
+            child: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                
+                  children: <Widget>[
+            MyCard(
+              title: 'Card 1',
+              description: '1',
+            ),
+            MyCard(
+              title: 'Card 2',
+              description: 'Description for Card 2',
+            ),
+            MyCard(
+              title: 'Card 3',
+              description: 'Description for Card 3',
+            ),
+            MyCard(
+              title: 'Card 4',
+              description: 'Description for Card 4',
+            ),
+            MyCard(
+              title: 'Card 5',
+              description: 'Description for Card 5',
+            ),
+          ],
+                
+              ),
+            )
+            ),
+          ),
         ],
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+      bottomNavigationBar: BottomNavBar(
+        selectedIndex: _selectedIndex,
+        onItemTapped: _onItemTapped,
+      ),
+    );
+  }
+}
+
+
+
+
+class FourthScreen extends StatefulWidget {
+  const FourthScreen({Key? key}) : super(key: key);
+
+  @override
+  _FourthScreenState createState() => _FourthScreenState();
+}
+
+class _FourthScreenState extends State<FourthScreen> {
+  int _selectedIndex = 0;
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      resizeToAvoidBottomInset: false,
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        /*leading: Row(
           children: [
-            // Your content here
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SvgPicture.asset("assests/4_30.svg", width: 16, height: 12),
+            ),
           ],
         ),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: SvgPicture.asset("assests/signal.svg", width: 20, height: 20),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: SvgPicture.asset("assests/wifi.svg", width: 20, height: 20),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: SvgPicture.asset("assests/battery-three-quarters.svg", width: 20, height: 20),
+          ),
+        ],*/
+      ),
+      body: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              
+              TopNavBar(), // Top navigation bar comes below the four elements
+            ],
+          ),
+          Expanded(
+            child:SingleChildScrollView(
+            child: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                
+                  children: <Widget>[
+            MyCard5(
+              title: 'Card 1',
+              description: '1',
+            ),
+            MyCard4(
+              title: 'Card 2',
+              description: 'Description for Card 2',
+            ),
+            MyCard2(
+              title: 'Card 3',
+              description: 'Description for Card 3',
+            ),
+            MyCard2(
+              title: 'Card 4',
+              description: 'Description for Card 4',
+            ),
+            MyCard2(
+              title: 'Card 5',
+              description: 'Description for Card 5',
+            ),
+          ],
+                
+              ),
+            )
+            ),
+          ),
+        ],
+      ),
+      bottomNavigationBar: BottomNavBar(
+        selectedIndex: _selectedIndex,
+        onItemTapped: _onItemTapped,
+      ),
+    );
+  }
+}
+
+
+
+class FifthScreen extends StatefulWidget {
+  const FifthScreen({Key? key}) : super(key: key);
+
+  @override
+  _FifthScreenState createState() => _FifthScreenState();
+}
+
+class _FifthScreenState extends State<FifthScreen> {
+  int _selectedIndex = 0;
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      resizeToAvoidBottomInset: false,
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        /*leading: Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SvgPicture.asset("assests/4_30.svg", width: 16, height: 12),
+            ),
+          ],
+        ),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: SvgPicture.asset("assests/signal.svg", width: 20, height: 20),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: SvgPicture.asset("assests/wifi.svg", width: 20, height: 20),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: SvgPicture.asset("assests/battery-three-quarters.svg", width: 20, height: 20),
+          ),
+        ],*/
+      ),
+      body: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              
+              TopNavBar(), // Top navigation bar comes below the four elements
+            ],
+          ),
+          Expanded(
+            child:SingleChildScrollView(
+            child: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                
+                  children: <Widget>[
+            MyCard6(
+              title: 'Card 1',
+              description: '1',
+            ),
+            MyCard6(
+              title: 'Card 2',
+              description: 'Description for Card 2',
+            ),
+            MyCard6(
+              title: 'Card 3',
+              description: 'Description for Card 3',
+            ),
+            MyCard6(
+              title: 'Card 4',
+              description: 'Description for Card 4',
+            ),
+            MyCard6(
+              title: 'Card 5',
+              description: 'Description for Card 5',
+            ),
+          ],
+                
+              ),
+            )
+            ),
+          ),
+        ],
       ),
       bottomNavigationBar: BottomNavBar(
         selectedIndex: _selectedIndex,

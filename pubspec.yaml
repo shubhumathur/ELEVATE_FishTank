@@ -74,6 +74,19 @@ flutter:
     - assests/connect.svg
     - assests/contribute.svg
     - assests/events.svg
+    - assests/search.svg
+    - assests/notification.svg
+    - assests/messaging.svg
+    - assests/menu.svg
+    - assests/upcoming.svg
+    - assests/your_events.svg
+    - assests/past_events.svg
+    - assests/register_event_upcoming.svg
+    - assests/completed_you_event.svg
+    - assests/ongoing_your_events.svg
+    - assests/cancel_your_.svg
+    - assests/know_more_past_event.svg
+    
     
 
   # An image asset can refer to one or more resolution-specific "variants", see
